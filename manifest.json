@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "No Auto Emojis in WA Web",
+    "version": "0.0.1",
+    "description": "Disable WhatsApp Web Auto Emojis",
+    "author": "Daniel Kluge",
+    "content_scripts": [{
+        "matches": ["https://web.whatsapp.com/*"],
+        "js": ["no-auto-emoji.js"]
+    }],
+    "permissions": [
+        "storage"
+    ],
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    }
+}
